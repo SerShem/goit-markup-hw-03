@@ -1,0 +1,212 @@
+/*--------------Base rules-------------------------------*/
+:root{
+  --target-blue: #2196F3;
+  --section-darkgrey: #2F303A;
+  --section-witegrey: #F5F4FA;
+  --text-grey: #757575;
+  --text-blak: #212121;
+  --text-witetransparent: #FFFFFF99;
+  --blue-buttom-backgraud: rgb(24, 138, 232);
+  --color-zeroblak: #000;
+  --color-maxwite: #fff;
+}
+body {
+  color: #757575;
+  font-family: 'Roboto';
+  background: #fff;
+  
+}
+ul {
+ list-style: none; 
+}
+ a {
+  text-decoration: none;
+ }
+
+ a:hover {
+   color: var(--target-blue);
+ }
+
+/*-----------------class salector-----------------------*/
+
+.titel-website-header {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--color-zeroblak);
+}
+
+.titel-website-footer {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--color-maxwite);
+}
+
+.text-blue {
+  color: var(--target-blue);
+}
+
+.header-link-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--color-zeroblak);
+}
+
+/*---------from the task («B12» Header and footer markup is the same across all
+ pages.) i think we mast do hadder is the same across all pages. And this
+ class violates "B12",  in first  I sink this sum special class wich do us 
+ introsting properti for our link */
+.current {
+  color: var(--target-blue);
+}
+
+.header-link-address {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-grey)
+}
+
+
+.super-titel {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-maxwite);
+}
+
+.super-button {
+  font-family: 'Roboto';
+  background: var(--target-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  width: 216px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--color-maxwite);
+}
+.super-button:hover {
+  box-shadow: 0px 4px 4px rgb(24, 138, 232);;
+}
+
+.titel-invisible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.subtitel-text-benefits {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--text-blak);
+}
+
+.text-benefits {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.main-sections-titel {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-blak);
+}
+
+.team-cart-allname {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--text-blak);
+}
+
+.team-cart-text {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.footer-address-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: var(--color-maxwite);
+}
+
+.footer-link {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-witetransparent);
+}
+
+
+.portfolio-button {
+  font-family: '';
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-button:hover {
+  background: var(--target-blue);
+  color: var(--color-maxwite);
+}
+.portfolio-button:fokus {
+  background: var(--target-blue);
+  color: var(--color-maxwite);
+}
+
+.portfolio-cart-titel {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--text-blak);
+}
+
+.portfolio-cart-text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+.section-darck-gray-groud{
+  background: var(--section-darkgrey);
+}
+
+.section-gray-groud {
+  background: var(--section-witegrey);
+}
