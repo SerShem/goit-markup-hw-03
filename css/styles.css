@@ -1,4 +1,4 @@
-/*--------------Base rules-------------------------------*/
+/*--------------global-------------------------------*/
 :root{
   --target-blue: #2196F3;
   --section-darkgrey: #2F303A;
@@ -14,22 +14,84 @@ body {
   color: #757575;
   font-family: 'Roboto';
   background: #fff;
-  
 }
+
 ul {
- list-style: none; 
+  list-style: none;
+  padding: 0px; 
+  margin: 0px;
 }
- a {
+
+a {
   text-decoration: none;
- }
+}
 
- a:hover {
-   color: var(--target-blue);
- }
+a:hover {
+  color: var(--target-blue);
+}
 
-/*-----------------class salector-----------------------*/
+.text-blue {
+  color: var(--target-blue);
+}
+
+.titel-invisible {
+ position: absolute;
+ width: 1px;
+ height: 1px;
+ margin: -1px;
+ border: 0;
+ padding: 0;
+ 
+ white-space: nowrap;
+ clip-path: inset(100%);
+ clip: rect(0 0 0 0);
+ overflow: hidden;
+}
+  
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+ 
+.darck-gray-groud{
+   background: var(--section-darkgrey);
+}
+ 
+.gray-groud {
+   background: var(--section-witegrey);
+}
+.container-center{
+  text-align: center;
+}
+
+ /*-----------------hadder-----------------------*/
+
+.header-section{
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-div{
+  display: flex;
+}
 
 .titel-website-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -47,11 +109,11 @@ ul {
   color: var(--color-maxwite);
 }
 
-.text-blue {
-  color: var(--target-blue);
-}
-
 .header-link-nav {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -59,98 +121,68 @@ ul {
   color: var(--color-zeroblak);
 }
 
-/*---------from the task («B12» Header and footer markup is the same across all
- pages.) i think we mast do hadder is the same across all pages. And this
- class violates "B12",  in first  I sink this sum special class wich do us 
- introsting properti for our link */
+.header-nav-list{
+  display: flex;
+  margin-left: 93px;
+}
+
+.header-nav-list .item{
+  margin-right: 50px;
+}
+
+.header-nav-list .item:last-child{
+  margin-right: 0px;
+}
+
 .current {
   color: var(--target-blue);
 }
 
 .header-link-address {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--text-grey)
+  color: var(--text-grey);
 }
 
-
-.super-titel {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--color-maxwite);
+.header-address-list {
+  display: flex;
+  margin-left: 344px;
 }
 
-.super-button {
-  font-family: 'Roboto';
-  background: var(--target-blue);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  letter-spacing: 0.06em;
-  border-radius: 4px;
-  width: 216px;
-  height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  color: var(--color-maxwite);
-}
-.super-button:hover {
-  box-shadow: 0px 4px 4px rgb(24, 138, 232);;
+.header-address-list .item {
+  margin-right: 50px;
 }
 
-.titel-invisible {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.header-address-list .item:last-child {
+  margin-right: 0px;
 }
 
-.subtitel-text-benefits {
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: var(--text-blak);
+/*-----------------fotter-----------------------*/
+
+.footer-ul{
+  margin-top: 20px;
 }
 
-.text-benefits {
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+.footer-ul .item{
+  margin-bottom: 9px;
 }
 
-.main-sections-titel {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--text-blak);
+.footer-ul .item:last-child {
+  margin-bottom: 0px;
 }
 
-.team-cart-allname {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: var(--text-blak);
-}
-
-.team-cart-text {
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
+.fotter-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-address-link {
@@ -169,20 +201,166 @@ ul {
   color: var(--text-witetransparent);
 }
 
+/*-----------------main main-----------------------*/
+
+.super-titel {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-maxwite);
+
+  margin-top: 106px;
+}
+
+.super-button {
+  margin-bottom: 106px;
+  margin-top: 30px;
+  padding: 10px 32px;
+
+  border: none;
+  font-family: 'Roboto';
+  background: var(--target-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--color-maxwite);
+}
+
+.super-button:hover {
+  box-shadow: 0px 4px 4px rgb(24, 138, 232);;
+}
+
+.ul-text-benefits{
+  display: flex;
+}
+
+.ul-text-benefits .item{
+  margin-right: 30px;
+}
+
+.ul-text-benefits .item:last-child{
+  margin-left: 0px;
+}
+
+.subtitel-text-benefits {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--text-blak);
+}
+
+.text-benefits {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  width: 270px
+}
+
+.section-no-top-pd{
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
+
+.main-sections-titel {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-blak);
+
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.cart-item{
+  background: #FFFFFF;
+  box-shadow: 
+    0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-cart-allname {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--text-blak);
+
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.team-cart-text {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+/*-----------------main portfolio-----------------------*/
+
+.portfolio-filter-list{
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-filter-list .item{
+  margin-right: 8px;
+  margin-bottom: 50px;
+}
+
+.portfolio-filter-list .item:last-child{
+  margin-right: 0px;
+}
+
+.portfolio-filter-list .item:last-child {
+  margin-right: 0px;
+}
+
+.portfolio-cart-list {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-cart-list .item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-cart-list .item:nth-child(3n) {
+  margin-right: 0px;
+}
 
 .portfolio-button {
-  font-family: '';
+  padding: 6px 26px;
+  
+  border: none;
   border-radius: 4px;
+  font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  background: var(--section-witegrey);
+}
+
+.button-center {
+  padding: 6px 53px;
 }
 
 .portfolio-button:hover {
   background: var(--target-blue);
   color: var(--color-maxwite);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .portfolio-button:fokus {
   background: var(--target-blue);
@@ -190,6 +368,9 @@ ul {
 }
 
 .portfolio-cart-titel {
+  margin-top: 20px;
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -198,15 +379,9 @@ ul {
 }
 
 .portfolio-cart-text {
+  margin-bottom: 20px;
+  margin-top: 0px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-}
-
-.section-darck-gray-groud{
-  background: var(--section-darkgrey);
-}
-
-.section-gray-groud {
-  background: var(--section-witegrey);
 }
