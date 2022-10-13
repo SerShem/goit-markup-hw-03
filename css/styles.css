@@ -14,24 +14,80 @@ body {
   color: #757575;
   font-family: 'Roboto';
   background: #fff;
+  font-size: 14px;
+  letter-spacing: 0.03px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+address {
+  font-style: normal;
+}
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
 ul {
   list-style: none;
   padding: 0px; 
   margin: 0px;
 }
-
 a {
   text-decoration: none;
 }
-
 a:hover {
   color: var(--target-blue);
 }
 
 .text-blue {
   color: var(--target-blue);
+}
+
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container{
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0 15px;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.link {
+text-decoration: none;
+}
+
+.darck-gray-groud{
+  background: var(--section-darkgrey);
+}
+
+.gray-groud {
+   background: var(--section-witegrey);
+}
+.container-center{
+  text-align: center;
+  justify-content: center;
 }
 
 .titel-invisible {
@@ -47,45 +103,14 @@ a:hover {
  clip: rect(0 0 0 0);
  overflow: hidden;
 }
-  
-.section{
-  padding-top: 94px;
-  padding-bottom: 94px;
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-}
-
-.container{
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
- 
-.darck-gray-groud{
-   background: var(--section-darkgrey);
-}
- 
-.gray-groud {
-   background: var(--section-witegrey);
-}
-.container-center{
-  text-align: center;
-}
 
  /*-----------------hadder-----------------------*/
-
 .header-section{
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
+  border-bottom: 1px solid var(--section-witegrey);
 }
-
-.header-div{
+ .header-div{
   display: flex;
+  justify-content: space-between;
 }
 
 .titel-website-header {
@@ -120,10 +145,11 @@ a:hover {
   letter-spacing: 0.02em;
   color: var(--color-zeroblak);
 }
-
+.header-nav{
+  margin-left: 93px;
+}
 .header-nav-list{
   display: flex;
-  margin-left: 93px;
 }
 
 .header-nav-list .item{
@@ -180,9 +206,6 @@ a:hover {
 .fotter-section {
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .footer-address-link {
@@ -202,8 +225,17 @@ a:hover {
 }
 
 /*-----------------main main-----------------------*/
+.super-section {
+  padding: 200px 0;
+  background: var(--section-darkgrey);
+}
 
 .super-titel {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -211,13 +243,10 @@ a:hover {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-maxwite);
-
-  margin-top: 106px;
 }
 
 .super-button {
-  margin-bottom: 106px;
-  margin-top: 30px;
+  margin: 0 auto;
   padding: 10px 32px;
 
   border: none;
@@ -245,10 +274,12 @@ a:hover {
 }
 
 .ul-text-benefits .item:last-child{
-  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .subtitel-text-benefits {
+  margin-bottom: 10px;
+
   font-weight: 700;
   letter-spacing: 0.03em;
   font-size: 14px;
@@ -310,11 +341,11 @@ a:hover {
 .portfolio-filter-list{
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .portfolio-filter-list .item{
   margin-right: 8px;
-  margin-bottom: 50px;
 }
 
 .portfolio-filter-list .item:last-child{
@@ -339,6 +370,15 @@ a:hover {
   margin-right: 0px;
 }
 
+.portfolio-cart-list .item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
+.portfolio-cart {
+  padding: 24px 20px;
+  border: 1px solid var(--section-witegrey);
+}
+
 .portfolio-button {
   padding: 6px 26px;
   
@@ -353,10 +393,6 @@ a:hover {
   background: var(--section-witegrey);
 }
 
-.button-center {
-  padding: 6px 53px;
-}
-
 .portfolio-button:hover {
   background: var(--target-blue);
   color: var(--color-maxwite);
@@ -368,7 +404,6 @@ a:hover {
 }
 
 .portfolio-cart-titel {
-  margin-top: 20px;
   margin-bottom: 4px;
 
   font-weight: 700;
@@ -379,8 +414,6 @@ a:hover {
 }
 
 .portfolio-cart-text {
-  margin-bottom: 20px;
-  margin-top: 0px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
