@@ -110,7 +110,6 @@ text-decoration: none;
 }
  .header-div{
   display: flex;
-  justify-content: space-between;
 }
 
 .titel-website-header {
@@ -178,7 +177,7 @@ text-decoration: none;
 
 .header-address-list {
   display: flex;
-  margin-left: 344px;
+  margin-left: auto;
 }
 
 .header-address-list .item {
@@ -191,7 +190,7 @@ text-decoration: none;
 
 /*-----------------fotter-----------------------*/
 
-.footer-ul{
+.footer-address{
   margin-top: 20px;
 }
 
@@ -335,7 +334,7 @@ text-decoration: none;
   letter-spacing: 0.03em;
 }
 .team-cart-box{
-  padding: 30px;
+  padding: 30px 0;
 }
 
 /*-----------------main portfolio-----------------------*/
